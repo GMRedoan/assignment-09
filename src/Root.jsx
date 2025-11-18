@@ -8,8 +8,8 @@ const Root = () => {
      useEffect(() => {
     AOS.init({
       duration: 800,  
-     });
-  }, []);
+     })
+  }, [])
     return (
          <div data-aos="fade-up">
          <Navbar></Navbar>
