@@ -1,0 +1,98 @@
+[
+  {
+    "toyId": 1,
+    "toyName": "Lego Classic Bricks",
+    "sellerName": "Toys R Us Local",
+    "sellerEmail": "contact@toysruslocal.com",
+    "price": 49.99,
+    "rating": 4.7,
+    "availableQuantity": 75,
+    "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles.",
+    "pictureURL": "https://i.ibb.co.com/tTkpm2Sp/download-1.jpg",
+    "subCategory": "Building Blocks"
+  },
+  {
+    "toyId": 2,
+    "toyName": "Barbie Dreamhouse",
+    "sellerName": "FunToys Store",
+    "sellerEmail": "info@funtoysstore.com",
+    "price": 199.99,
+    "rating": 4.8,
+    "availableQuantity": 30,
+    "description": "A luxurious Barbie Dreamhouse with furniture and accessories. Perfect for hours of imaginative play.",
+    "pictureURL": "https://i.ibb.co.com/Jj3G9XH1/download-4.jpg",
+    "subCategory": "Dolls"
+  },
+  {
+    "toyId": 3,
+    "toyName": "Hot Wheels Track Set",
+    "sellerName": "Speedy Toys",
+    "sellerEmail": "support@speedytoys.com",
+    "price": 34.99,
+    "rating": 4.5,
+    "availableQuantity": 50,
+    "description": "A thrilling Hot Wheels track set for endless racing fun. Perfect for young car enthusiasts.",
+    "pictureURL": "https://i.ibb.co.com/RkrzhWrf/download.jpg",
+    "subCategory": "Vehicles"
+  },
+  {
+    "toyId": 4,
+    "toyName": "Fisher-Price Musical Piano",
+    "sellerName": "Baby Joy Toys",
+    "sellerEmail": "hello@babyjoytoys.com",
+    "price": 29.99,
+    "rating": 4.6,
+    "availableQuantity": 60,
+    "description": "A colorful musical piano for toddlers. Encourages early learning of music, colors, and numbers.",
+    "pictureURL": "https://i.ibb.co.com/T9WwGW5/download-2.jpg",
+    "subCategory": "Musical Toys"
+  },
+  {
+    "toyId": 5,
+    "toyName": "Rubik's Cube",
+    "sellerName": "Puzzle World",
+    "sellerEmail": "contact@puzzleworld.com",
+    "price": 14.99,
+    "rating": 4.9,
+    "availableQuantity": 100,
+    "description": "The classic 3x3 Rubik's Cube puzzle. Enhances problem-solving and logical thinking skills.",
+    "pictureURL": "https://i.ibb.co.com/cKPszTtj/download-3.jpg",
+    "subCategory": "Puzzles"
+  },
+  {
+    "toyId": 6,
+    "toyName": "Play-Doh Creative Set",
+    "sellerName": "Creative Kids Store",
+    "sellerEmail": "info@creativekidsstore.com",
+    "price": 24.99,
+    "rating": 4.4,
+    "availableQuantity": 80,
+    "description": "A fun Play-Doh set with multiple colors and molds. Encourages creativity and imaginative play.",
+    "pictureURL": "https://i.ibb.co.com/39CRxgt9/download-5.jpg",
+    "subCategory": "Arts & Crafts"
+  },
+  {
+    "toyId": 7,
+    "toyName": "Nerf Blaster Elite",
+    "sellerName": "Action Toys",
+    "sellerEmail": "support@actiontoys.com",
+    "price": 39.99,
+    "rating": 4.7,
+    "availableQuantity": 45,
+    "description": "A Nerf blaster for epic battles and active play. Safe foam darts included.",
+    "pictureURL": "https://i.ibb.co.com/20RvH9wJ/download-6.jpg",
+    "subCategory": "Action Toys"
+  },
+  {
+    "toyId": 8,
+    "toyName": "Mega Hero Battle Figure",
+    "sellerName": "Action Toys",
+    "sellerEmail": "info@funtoysstore.com",
+    "price": 59.99,
+    "rating": 4.4,
+    "availableQuantity": 35,
+    "description": "A Nerf blaster for epic battles and active play. Safe foam darts included.",
+    "pictureURL": "https://i.ibb.co.com/P7hGhfp/download-7.jpg",
+    "subCategory": "Action Toys"
+  }
+]

@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import Error from './Pages/Error';
 import AuthProvider from './provider/AuthProvider';
+import Loading from './Pages/Loading';
 
 
 const router = createBrowserRouter([
@@ -18,7 +19,9 @@ const router = createBrowserRouter([
       {
         index: true,
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader:() => fetch('/Ptoy.json'),
+        hydrateFallbackElement: <Loading></Loading>
       },
       {
         path: "/login",

@@ -1,13 +1,96 @@
-import React from 'react';
-import Banner from '../Components/Banner';
+import React from "react";
+import Banner from "../Components/Banner";
+import { useLoaderData } from "react-router";
+import Toys from "./Toys";
 
 const Home = () => {
-    return (
-        <div>
-            <Banner></Banner>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        </div>
-    );
+    const toys = useLoaderData()
+    console.log(toys)
+ 
+  return (
+    <div className="bg-linear-to-b from-white to-blue-200 min-h-screen">
+      <Banner></Banner>
+
+<div>
+    <p className="bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-logo text-center text-4xl md:text-5xl leading-tight md:leading-[85px] px-6 pt-13">The Ultimate Toy Destination</p>
+</div>
+      <div className="flex justify-between px-20 py-15">
+    <div className="carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
+  <div className="carousel-item h-full">
+    <img src="https://i.ibb.co.com/F4JxDVG2/download-1.jpg" />
+  </div>
+  <div className="carousel-item h-full">
+    <img src="https://i.ibb.co.com/Wvj48kh7/images.jpg" />
+  </div>
+  <div className="carousel-item h-full">
+    <img src="https://i.ibb.co.com/Wvj48kh7/images.jpg" />
+  </div>
+ </div>
+
+<div className="carousel rounded-box h-86 w-120 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://i.ibb.co.com/6JZcLXN5/download-1.jpg"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://i.ibb.co.com/mVKMgz2t/download-2.jpg" 
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://i.ibb.co.com/Wvk93S6D/download-3.jpg"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://i.ibb.co.com/fV8bGGDc/download-2.jpg"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://i.ibb.co.com/Wvj48kh7/images.jpg"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://i.ibb.co.com/v47QDS56/download.jpg"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://i.ibb.co.com/yctNTB3p/download-3.jpg"
+      className="w-full" />
+  </div>
+</div>
+
+
+<div className="carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
+  <div className="carousel-item h-full">
+    <img src="https://i.ibb.co.com/fV8bGGDc/download-2.jpg" />
+  </div>
+  <div className="carousel-item h-full">
+    <img src="https://i.ibb.co.com/Wvk93S6D/download-3.jpg" />
+  </div>
+  <div className="carousel-item h-full">
+    <img src="https://i.ibb.co.com/F4JxDVG2/download-1.jpg" />
+  </div>
+ </div>
+      </div>
+
+<div>
+    <p className="bg-linear-to-r from-red-500 to-yellow-600 bg-clip-text text-transparent font-logo text-center text-4xl md:text-5xl leading-tight md:leading-[85px] px-6 pb-13">Our Popular Toy Collections</p>
+</div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-9 mx-4 md:mx-16 pb-15">
+        {
+            toys.map(toy => <Toys key={toy.toyId} toy={toy}></Toys>)
+        }
+      </div>
+
+     </div>
+  );
 };
 
 export default Home;

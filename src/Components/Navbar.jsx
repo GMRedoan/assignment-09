@@ -23,7 +23,7 @@ const handleLogout = () => {
 }
     const navigate = useNavigate()
      return (
-        <nav className="flex justify-between px-7 items-center sticky top-0 z-10 bg-linear-to-t from-white to-blue-300 pt-4">
+        <nav className="flex justify-between items-center px-7 sticky top-0 z-10 bg-linear-to-t from-white to-blue-300 pt-3">
             <div className="">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const handleLogout = () => {
                         </div>
                     </ul>
                 </div>
-                <Link to='/' className='flex'>
+                <Link to='/' className='flex -mt-2'>
                     <img className='w-[78px]' src={logo} alt="" />
                     <p className="text-3xl font-black bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-logo">Toy Topia</p>
                 </Link>
