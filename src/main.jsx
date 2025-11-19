@@ -9,6 +9,11 @@ import Registration from './Pages/Registration';
 import Error from './Pages/Error';
 import AuthProvider from './provider/AuthProvider';
 import Loading from './Pages/Loading';
+import Shop from './Pages/Shop';
+import Blog from './Pages/Blog';
+import Contact from './Pages/Contact';
+import PrivateRoutes from './routes/PrivateRoutes';
+import Details from './Pages/Details';
 
 
 const router = createBrowserRouter([
@@ -20,7 +25,7 @@ const router = createBrowserRouter([
         index: true,
         path: "/",
         element: <Home></Home>,
-        loader:() => fetch('/Ptoy.json'),
+        loader: () => fetch('/Toy.json'),
         hydrateFallbackElement: <Loading></Loading>
       },
       {
@@ -30,6 +35,28 @@ const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration></Registration>
+      },
+      {
+        path: "/shop",
+        element: <Shop></Shop>,
+        loader: ()=> fetch('/AllToy.json'),
+        hydrateFallbackElement: <Loading></Loading>
+      },
+      {
+        path: "/details/:id",
+        element: <PrivateRoutes>
+                      <Details></Details>
+                 </PrivateRoutes>,
+        loader: ()=> fetch('/AllToy.json'),
+        hydrateFallbackElement: <Loading></Loading>
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
       },
     ]
   },
@@ -42,7 +69,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
-          <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </AuthProvider>
   </StrictMode>
 )

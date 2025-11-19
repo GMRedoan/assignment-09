@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaRegStar, FaStar } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const Toys = ({ toy }) => { 
   const rating = toy.rating || 0
@@ -27,7 +28,7 @@ const Toys = ({ toy }) => {
         <p className="text-red-500 mb-1">Available: {toy.availableQuantity}</p>
         <p className="font-semibold text-lg mb-3">${toy.price.toFixed(2)}</p>
 
-        <button className="btn bg-linear-to-r from-blue-500 to-purple-600 text-white font-bold border-0 hover:text-yellow-300 btn-sm">View More</button>
+        <Link to={`/details/${toy.toyId}`} className="btn bg-linear-to-r from-blue-500 to-purple-600 text-white font-bold border-0 hover:text-yellow-300 btn-sm">View More</Link>
       </div>
     </div>
   );

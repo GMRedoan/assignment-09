@@ -3,9 +3,7 @@ import { useLoaderData } from "react-router";
 import Toys from "./Toys";
 
 const Home = () => {
-    const toys = useLoaderData()
-    console.log(toys)
- 
+    const toys = useLoaderData() 
   return (
     <div className="bg-linear-to-b from-white to-blue-200 min-h-screen">
       <Banner></Banner>

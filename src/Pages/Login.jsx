@@ -1,5 +1,5 @@
-import React, { use, useState } from 'react';
-import { Link, useNavigate } from 'react-router';
+import { use, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/authContext';
 import Swal from 'sweetalert2';
 import { toast, ToastContainer } from 'react-toastify';
@@ -7,6 +7,7 @@ import { toast, ToastContainer } from 'react-toastify';
 const Login = () => {
     <title>Login</title>
     const { Login, user, googleLogin } = use(AuthContext)
+    const location = useLocation()
     const navigate = useNavigate()
     const notify = (msg) => toast.error(msg);
     const [error, setError] = useState('')
@@ -25,7 +26,7 @@ const Login = () => {
                     draggable: true
                 });
                 form.reset()
-                navigate("/")
+                navigate(location.state || "/")
             })
             .catch(() => {
                 setError("Invalid Email or Password")

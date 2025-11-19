@@ -8,21 +8,21 @@ import Swal from 'sweetalert2';
 
 
 const Navbar = () => {
-    const {user, logout} = use(AuthContext)
-const handleLogout = () => {
-    logout().then(() => {
-        Swal.fire({
-  title: "You Logged Out Successfully",
-  icon: "success",
-  draggable: true
-});
- }).catch((error) => {
-    console.log(error)
- });
-//  window.location.reload()
-}
+    const { user, logout } = use(AuthContext)
+    const handleLogout = () => {
+        logout().then(() => {
+            Swal.fire({
+                title: "You Logged Out Successfully",
+                icon: "success",
+                draggable: true
+            });
+        }).catch((error) => {
+            console.log(error)
+        });
+        //  window.location.reload()
+    }
     const navigate = useNavigate()
-     return (
+    return (
         <nav className="flex justify-between items-center  sticky top-0 z-10 bg-linear-to-t from-white to-blue-300 pt-3 px-7">
             <div className="flex py-3">
                 <div className="dropdown">
@@ -36,13 +36,17 @@ const handleLogout = () => {
                             <FaHome></FaHome>
                             <NavLink to='/'><li>Home</li></NavLink>
                         </div>
-                        <div className='flex items-center gap-1'>
-                            <FaAppStoreIos />
-                            <NavLink to='/apps'><li>Apps</li></NavLink>
+                        <div className='flex items-center gap-1 text-xl'>
+                            <NavLink to='/shop'><li>Shop</li></NavLink>
                         </div>
-                        <div className='flex items-center gap-1'>
-                            <MdInstallMobile />
-                            <NavLink to='/installation'><li>Installation</li></NavLink>
+                        <div className='flex items-center gap-1 text-xl'>
+                            <NavLink to='/details'><li>Toy Details</li></NavLink>
+                        </div>
+                        <div className='flex items-center gap-1 text-xl'>
+                            <NavLink to='/blog'><li>Blog</li></NavLink>
+                        </div>
+                        <div className='flex items-center gap-1 text-xl'>
+                            <NavLink to='/contact'><li>Contact</li></NavLink>
                         </div>
                     </ul>
                 </div>
@@ -52,37 +56,41 @@ const handleLogout = () => {
                 </Link>
             </div>
             <nav className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 space-x-5 ">
-                    <div className='flex items-center gap-1'><FaHome></FaHome>
+                <ul className="menu menu-horizontal px-1 space-x-10 ">
+                    <div className='flex items-center gap-1 text-xl'>
                         <NavLink to='/'><li>Home</li></NavLink>
                     </div>
-                    {/* <div className='flex items-center gap-1'>
-                        <FaAppStoreIos />
-                        <NavLink to='/apps'><li>Apps</li></NavLink>
+                    <div className='flex items-center gap-1 text-xl'>
+                        <NavLink to='/shop'><li>Shop</li></NavLink>
                     </div>
-                    <div className='flex items-center gap-1'>
-                        <MdInstallMobile />
-                        <NavLink to='/installation'><li>Installation</li></NavLink> */}
+                     <div className='flex items-center gap-1 text-xl'>
+                        <NavLink to='/details'><li>Toy Details</li></NavLink>
+                    </div>
+                     <div className='flex items-center gap-1 text-xl'>
+                        <NavLink to='/blog'><li>Blog</li></NavLink>
+                    </div>
+                    <div className='flex items-center gap-1 text-xl'>
+                        <NavLink to='/contact'><li>Contact</li></NavLink>
+                    </div>
 
-                    {/* </div> */}
                 </ul>
             </nav>
             {
-                user ? 
-                (
-                    <div className='flex items-center gap-4'>
-                        <img className='w-[42px] h-[42px] rounded-full' src={user.photoURL} alt=""
-                        title={user.displayName} />
-                         <p onClick={handleLogout} className="btn bg-linear-to-r from-red-500 to-yellow-500 text-white font-bold border-0 hover:text-black">Logout</p>
-                    </div>
-               )
-                
-                :    
-                
-                ( 
-                <p onClick={()=>navigate('/login')} className="btn bg-linear-to-r from-blue-500 to-purple-600 text-white font-bold border-0 hover:text-yellow-300">Login</p>
-                )
-             }
+                user ?
+                    (
+                        <div className='flex items-center gap-4'>
+                            <img className='w-[42px] h-[42px] rounded-full' src={user.photoURL} alt=""
+                                title={user.displayName} />
+                            <p onClick={handleLogout} className="btn bg-linear-to-r from-red-500 to-yellow-500 text-white font-bold border-0 hover:text-black">Logout</p>
+                        </div>
+                    )
+
+                    :
+
+                    (
+                        <p onClick={() => navigate('/login')} className="btn bg-linear-to-r from-blue-500 to-purple-600 text-white font-bold border-0 hover:text-yellow-300">Login</p>
+                    )
+            }
         </nav>
     );
 };
