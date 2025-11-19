@@ -24,7 +24,7 @@ const Banner = () => {
         </h2>
 
         <div className="w-full mt-16">
-          <div className="flex justify-center gap-30">
+          <div className="md:flex justify-center gap-30">
             {stats.map((s, i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="flex items-start justify-center">
@@ -40,7 +40,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="absolute w-full pt-15">
+      <div className="md:pt-15 absolute w-full ">
         <Marquee>
           <img className="w-[150px] mr-8" src="logo.png" alt="" />
           <img className="w-[150px] mr-8" src="112.png" alt="" />

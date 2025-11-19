@@ -13,8 +13,10 @@ const Home = () => {
 <div>
     <p className="bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-logo text-center text-4xl md:text-5xl leading-tight md:leading-[85px] px-6 pt-13">The Ultimate Toy Destination</p>
 </div>
-      <div className="flex justify-between px-20 py-15">
-    <div className="carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
+
+      <div className="flex flex-col px-6 py-8 sm:px-10 md:px-20 md:py-15 md:flex-row md:justify-between">
+
+    <div className="mb-4 ml-12 md:mb-0 md:ml-0 carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
   <div className="carousel-item h-full">
     <img src="https://i.ibb.co.com/F4JxDVG2/download-1.jpg" />
   </div>
@@ -26,46 +28,39 @@ const Home = () => {
   </div>
  </div>
 
-<div className="carousel rounded-box h-86 w-120 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
+<div className="carousel rounded-box shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300 w-full max-w-120 mx-auto">
+
   <div className="carousel-item w-1/2">
-    <img
-      src="https://i.ibb.co.com/6JZcLXN5/download-1.jpg"
-      className="w-full" />
+    <img src="https://i.ibb.co.com/6JZcLXN5/download-1.jpg" className="w-full h-auto object-cover" />
   </div>
+
   <div className="carousel-item w-1/2">
-    <img
-      src="https://i.ibb.co.com/mVKMgz2t/download-2.jpg" 
-      className="w-full" />
+    <img src="https://i.ibb.co.com/mVKMgz2t/download-2.jpg" className="w-full h-auto object-cover" />
   </div>
+
   <div className="carousel-item w-1/2">
-    <img
-      src="https://i.ibb.co.com/Wvk93S6D/download-3.jpg"
-      className="w-full" />
+    <img src="https://i.ibb.co.com/Wvk93S6D/download-3.jpg" className="w-full h-auto object-cover" />
   </div>
+
   <div className="carousel-item w-1/2">
-    <img
-      src="https://i.ibb.co.com/fV8bGGDc/download-2.jpg"
-      className="w-full" />
+    <img src="https://i.ibb.co.com/fV8bGGDc/download-2.jpg" className="w-full h-auto object-cover" />
   </div>
+
   <div className="carousel-item w-1/2">
-    <img
-      src="https://i.ibb.co.com/Wvj48kh7/images.jpg"
-      className="w-full" />
+    <img src="https://i.ibb.co.com/Wvj48kh7/images.jpg" className="w-full h-auto object-cover" />
   </div>
+
   <div className="carousel-item w-1/2">
-    <img
-      src="https://i.ibb.co.com/v47QDS56/download.jpg"
-      className="w-full" />
+    <img src="https://i.ibb.co.com/v47QDS56/download.jpg" className="w-full h-auto object-cover" />
   </div>
+
   <div className="carousel-item w-1/2">
-    <img
-      src="https://i.ibb.co.com/yctNTB3p/download-3.jpg"
-      className="w-full" />
+    <img src="https://i.ibb.co.com/yctNTB3p/download-3.jpg" className="w-full h-auto object-cover" />
   </div>
+
 </div>
 
-
-<div className="carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
+<div className="mt-4 ml-12 md:mt-0 md:ml-0 carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
   <div className="carousel-item h-full">
     <img src="https://i.ibb.co.com/fV8bGGDc/download-2.jpg" />
   </div>

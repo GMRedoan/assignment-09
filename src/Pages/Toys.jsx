@@ -7,7 +7,7 @@ const Toys = ({ toy }) => {
   const emptyStars = Math.max(0, 5 - filledStars)
 
   return (
-    <div className="card w-64 bg-base-100 shadow-2xl shadow-blue-500 border border-blue-200 m-4 hover:scale-105 transition-transform duration-300">
+    <div className="ml-18 md:ml-4 card w-64 bg-base-100 shadow-2xl shadow-blue-500 border border-blue-200 m-4 hover:scale-105 transition-transform duration-300">
       <figure className='p-2'>
         <img src={toy.pictureURL} alt={toy.toyName} className="h-48 w-full object-cover rounded-sm border border-blue-200 p-2" />
       </figure>

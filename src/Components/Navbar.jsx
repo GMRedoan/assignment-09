@@ -23,8 +23,8 @@ const handleLogout = () => {
 }
     const navigate = useNavigate()
      return (
-        <nav className="flex justify-between items-center px-7 sticky top-0 z-10 bg-linear-to-t from-white to-blue-300 pt-3">
-            <div className="">
+        <nav className="flex justify-between items-center  sticky top-0 z-10 bg-linear-to-t from-white to-blue-300 pt-3 px-7">
+            <div className="flex py-3">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -46,9 +46,9 @@ const handleLogout = () => {
                         </div>
                     </ul>
                 </div>
-                <Link to='/' className='flex -mt-2'>
+                <Link to='/' className='flex '>
                     <img className='w-[78px]' src={logo} alt="" />
-                    <p className="text-3xl font-black bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-logo">Toy Topia</p>
+                    <p className="mt-2 md:mt-0 md:text-3xl font-black bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-logo">Toy Topia</p>
                 </Link>
             </div>
             <nav className="navbar-center hidden lg:flex">
