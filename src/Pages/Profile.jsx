@@ -25,7 +25,7 @@ const Profile = () => {
           
           <div className="flex items-center gap-3 bg-blue-50 p-3 rounded-lg">
             <FaUser className="text-blue-500 text-xl" />
-            <p className="text-lg font-medium">{user.name || "No Name Available"}</p>
+            <p className="text-lg font-medium">{user.displayName || "No Name Available"}</p>
           </div>
 
           <div className="flex items-center gap-3 bg-blue-50 p-3 rounded-lg">

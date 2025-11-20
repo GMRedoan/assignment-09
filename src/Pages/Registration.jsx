@@ -116,7 +116,7 @@ const Registration = () => {
                                         className="input" placeholder="Password" />
                                     <p
                                         onClick={() => setShowPass(!showPass)}
-                                        className='absolute top-3.5 right-5 cursor-pointer z-10'>{showPass ? <FaEye /> : <FaEyeSlash />}</p>
+                                        className='absolute top-3.5 right-5 cursor-pointer z-10'>{showPass ? <FaEyeSlash /> : <FaEye />}</p>
                                 </div>
                                 {
                                     error && <p className='text-red-500'>{error}</p>
