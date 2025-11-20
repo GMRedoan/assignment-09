@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 const DetailsCard = ({toy}) => {
    const handleSubmit = (e) => {
     e.preventDefault()
+    e.target.reset()
     Swal.fire({
   title: "Your form successfully submitted",
   icon: "success",
