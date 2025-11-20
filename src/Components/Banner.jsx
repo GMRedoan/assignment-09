@@ -19,7 +19,7 @@ const Banner = () => {
 
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative flex flex-col items-center justify-center pt-30">
-             <h2 className="text-white text-center text-5xl md:text-6xl font-banner leading-tight md:leading-[85px] px-6">
+             <h2 className="text-white text-center text-4xl md:text-6xl font-banner leading-tight md:leading-[85px] px-6">
           Explore our magical collection of <br /> toys crafted for endless childhood fun.
         </h2>
 
