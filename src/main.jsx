@@ -15,6 +15,7 @@ import Contact from './Pages/Contact';
 import PrivateRoutes from './routes/PrivateRoutes';
 import Details from './Pages/Details';
 import ForgetPass from './Pages/Forgetpass';
+import Profile from './Pages/Profile';
 
 
 const router = createBrowserRouter([
@@ -50,6 +51,12 @@ const router = createBrowserRouter([
                  </PrivateRoutes>,
         loader: ()=> fetch('/AllToy.json'),
         hydrateFallbackElement: <Loading></Loading>
+      },
+      {
+        path:'/profile',
+        element: <PrivateRoutes>
+            <Profile></Profile>
+        </PrivateRoutes>
       },
       {
         path: "/blog",

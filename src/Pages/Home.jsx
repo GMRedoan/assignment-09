@@ -29,31 +29,31 @@ const Home = () => {
 <div className="carousel rounded-box shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300 w-full max-w-120 mx-auto">
 
   <div className="carousel-item w-1/2">
-    <img src="https://i.ibb.co.com/6JZcLXN5/download-1.jpg" className="w-full h-auto object-cover" />
+    <img src="https://i.ibb.co.com/wrJwsm26/4506ff8020ec928a6b5b27d35c2b5481-jpg-720x720q80.jpg.jpg" className="w-full h-auto object-cover" />
   </div>
 
   <div className="carousel-item w-1/2">
-    <img src="https://i.ibb.co.com/mVKMgz2t/download-2.jpg" className="w-full h-auto object-cover" />
+    <img src="https://i.ibb.co.com/FLwf9d2k/b7a4a622-7cc9-483b-927b-d6769e1ccc9f-eb09b3e2c97c8f026726bbfd9f1e4852.webp" className="w-full h-auto object-cover" />
   </div>
 
   <div className="carousel-item w-1/2">
-    <img src="https://i.ibb.co.com/Wvk93S6D/download-3.jpg" className="w-full h-auto object-cover" />
+    <img src="https://i.ibb.co.com/wFWDKJ23/71-Ik-E24b-Mc-L-AC-SL1500.jpg" className="w-full h-auto object-cover" />
   </div>
 
   <div className="carousel-item w-1/2">
-    <img src="https://i.ibb.co.com/fV8bGGDc/download-2.jpg" className="w-full h-auto object-cover" />
+    <img src="https://i.ibb.co.com/4ZdDM1Qt/magnetic-drawing-board.jpg" className="w-full h-auto object-cover" />
   </div>
 
   <div className="carousel-item w-1/2">
-    <img src="https://i.ibb.co.com/Wvj48kh7/images.jpg" className="w-full h-auto object-cover" />
+    <img src="https://i.ibb.co.com/nqKK5gZc/product-1605704146.jpg" className="w-full h-auto object-cover" />
   </div>
 
   <div className="carousel-item w-1/2">
-    <img src="https://i.ibb.co.com/v47QDS56/download.jpg" className="w-full h-auto object-cover" />
+    <img src="https://i.ibb.co.com/xSVyQshY/bf3b865e24b64112f99c7d72eff99188-jpg-720x720q80.jpg" className="w-full h-auto object-cover" />
   </div>
 
   <div className="carousel-item w-1/2">
-    <img src="https://i.ibb.co.com/yctNTB3p/download-3.jpg" className="w-full h-auto object-cover" />
+    <img src="https://i.ibb.co.com/67p56HV0/s-l1200.jpg" className="w-full h-auto object-cover" />
   </div>
 
 </div>

@@ -1,6 +1,14 @@
 import { FaEnvelope, FaUser } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 
 const DetailsCard = ({toy}) => {
+   const handleSubmit = (e) => {
+    e.preventDefault()
+    Swal.fire({
+  title: "Your form successfully submitted",
+  icon: "success",
+ });
+   }
 
     return (
           <section className="py-16">
@@ -50,7 +58,7 @@ const DetailsCard = ({toy}) => {
             Submit Your Feedback!
           </h3>
 
-          <form className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="label">
                 <span className="label-text font-semibold">Your Name</span>
@@ -75,7 +83,7 @@ const DetailsCard = ({toy}) => {
               />
             </div>
 
-            <button className="btn btn-primary w-full text-lg">
+            <button type='submit'  className="btn btn-primary w-full text-lg">
               Try Now
             </button>
           </form>

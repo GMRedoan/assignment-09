@@ -32,8 +32,7 @@ const Navbar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2">
-                        <div className='flex items-center gap-1'>
-                            <FaHome></FaHome>
+                        <div className='flex items-center gap-1 text-xl'>
                             <NavLink to='/'><li>Home</li></NavLink>
                         </div>
                         <div className='flex items-center gap-1 text-xl'>
@@ -45,6 +44,11 @@ const Navbar = () => {
                         <div className='flex items-center gap-1 text-xl'>
                             <NavLink to='/contact'><li>Contact</li></NavLink>
                         </div>
+                        {
+                            user && <div className='flex items-center gap-1 text-xl'>
+                                <NavLink to='/profile'><li>Profile</li></NavLink>
+                            </div>
+                        }
                     </ul>
                 </div>
                 <Link to='/' className='flex '>
@@ -60,13 +64,17 @@ const Navbar = () => {
                     <div className='flex items-center gap-1 text-xl'>
                         <NavLink to='/shop'><li>Shop</li></NavLink>
                     </div>
-                     <div className='flex items-center gap-1 text-xl'>
+                    <div className='flex items-center gap-1 text-xl'>
                         <NavLink to='/blog'><li>Blog</li></NavLink>
                     </div>
                     <div className='flex items-center gap-1 text-xl'>
                         <NavLink to='/contact'><li>Contact</li></NavLink>
                     </div>
-
+                    {
+                        user && <div className='flex items-center gap-1 text-xl'>
+                            <NavLink to='/profile'><li>Profile</li></NavLink>
+                        </div>
+                    }
                 </ul>
             </nav>
             {

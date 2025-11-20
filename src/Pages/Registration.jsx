@@ -6,7 +6,6 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { toast, ToastContainer } from 'react-toastify';
 
 const Registration = () => {
-     <title>Registration</title>
      const { 
         createUser, 
         setUser, 
@@ -73,6 +72,7 @@ const Registration = () => {
 
     return (
         <div className="hero bg-linear-to-b from-white to-blue-200 min-h-screen">
+                 <title>Registration</title>
             <div className="hero-content flex-col">
                 <div className="text-center lg:text-center">
                     <h1 className="text-5xl font-bold bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">{

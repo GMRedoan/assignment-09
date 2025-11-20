@@ -4,6 +4,7 @@ import { FaRegClock, FaUserAlt } from 'react-icons/fa';
 const Blog = () => {
     return (
           <section className="py-16 bg-linear-to-b from-white to-blue-200 min-h-screen">
+                        <title>Blog</title>
       <div className="container mx-auto px-4">
 
         <div className="text-center mb-10">

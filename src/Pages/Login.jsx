@@ -5,7 +5,6 @@ import Swal from 'sweetalert2';
 import { toast, ToastContainer } from 'react-toastify';
 
 const Login = () => {
-    <title>Login</title>
     const { Login, user, googleLogin } = use(AuthContext)
     const [email, setEmail] = useState('')
     const location = useLocation()
@@ -49,6 +48,7 @@ const Login = () => {
     }
     return (
         <div className="hero bg-linear-to-b from-white to-blue-200 min-h-screen">
+                <title>Login</title>
             <div className="hero-content flex-col">
                 <div className="text-center lg:text-center">
                     <h1 className="text-5xl font-bold bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">{

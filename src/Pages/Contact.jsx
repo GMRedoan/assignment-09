@@ -4,6 +4,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 const Contact = () => {
     return (
  <section className="py-16 bg-linear-to-b from-white to-blue-200 min-h-screen">
+              <title>Contact</title>
       <div className="container mx-auto px-4">
 
         <div className="text-center mb-12">

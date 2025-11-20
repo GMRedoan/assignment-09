@@ -51,8 +51,7 @@ const AuthProvider = ({children}) => {
 
    // show info
    const updateUserProfile = (profile) => {
-
-    return updateProfile(auth.currentUser, profile)
+     return updateProfile(auth.currentUser, profile)
         .then(() => {
             setUser({
                 ...auth.currentUser,

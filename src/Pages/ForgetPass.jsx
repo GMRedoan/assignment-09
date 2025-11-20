@@ -1,12 +1,12 @@
-import { useContext, useRef } from 'react';
+import { use, useRef} from 'react';
 import { FaEnvelope } from 'react-icons/fa';
 import { useLocation } from 'react-router';
 import { AuthContext } from '../provider/authContext';
 import { toast, ToastContainer } from 'react-toastify';
 
 const ForgetPass = () => {
-    const {resetPass} = useContext(AuthContext)
-    const notify = () => toast.info("Please check your email!")
+    const {resetPass} = use(AuthContext)
+    const notify = (msg) => toast.info(msg)
     const location = useLocation()
     const defaultEmail = location.state || ""
     const emailRef = useRef()
@@ -15,15 +15,16 @@ const ForgetPass = () => {
         e.preventDefault()
         resetPass(email)
         .then(() => {
-            notify()
+            notify("Please check your email!")
          })
-        .catch((error) => {
-            console.log(error)
-    })
+        .catch(() => {
+              notify("Too many request")
+     })
      }
     return (
-   <section className="flex justify-center items-center bg-linear-to-b from-white to-blue-200 min-h-screen">
-      <div className="container mx-auto px-4 max-w-md">
+   <section className="flex justify-center items-center bg-linear-to-b from-white to-blue-200 min-h-130">
+        <title>Forgot password</title>
+       <div className="container mx-auto px-4 max-w-md">
 
         <div className="card bg-base-100 shadow-2xl shadow-blue-500 p-8">
           <h2 className="text-3xl font-bold text-center text-primary mb-6">

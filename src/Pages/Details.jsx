@@ -9,6 +9,7 @@ const Details = () => {
      const toy = toys.find((toy) => toy.toyId === parseInt(id))
      return (
         <div className='bg-linear-to-b from-white to-blue-200 min-h-screen'>
+                 <title>Details</title>
             <DetailsCard toy={toy}></DetailsCard>
         </div>
     );
