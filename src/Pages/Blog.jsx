@@ -13,9 +13,9 @@ const Blog = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
 
-          <div className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all">
+          <div className="card bg-base-200 shadow-2xl shadow-blue-500  hover:scale-105 transition-transform duration-300">
             <figure>
               <img
                 src="https://i.ibb.co.com/9kGwDq25/71-U06-Q9-P9-YL-AC-SL1500.jpg"
@@ -46,7 +46,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all">
+          <div className="card bg-base-200 shadow-2xl shadow-blue-500  hover:scale-105 transition-transform duration-300">
             <figure>
               <img
                 src="https://i.ibb.co.com/39PMdz7V/media-31b549-f7a1972d57314320806c074bf2c8c353-mv2-jpg-v1-fit-w-650-h-481-al-c-q-20-enc-auto-file.jpg"
@@ -77,7 +77,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all">
+          <div className="card bg-base-200 shadow-2xl shadow-blue-500  hover:scale-105 transition-transform duration-300">
             <figure>
               <img
                 src="https://i.ibb.co.com/C3RHGRc9/Blog-Pretend-Play-E.webp"

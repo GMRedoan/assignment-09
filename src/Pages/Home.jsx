@@ -14,15 +14,15 @@ const Home = () => {
 
       <div className="flex flex-col px-6 py-8 sm:px-10 md:px-20 md:py-15 md:flex-row md:justify-between">
 
-    <div className="mb-4 ml-12 md:mb-0 md:ml-0 carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
+    <div className="mb-4 ml-12 md:mb-0 md:ml-0 carousel carousel-vertical rounded-box h-86 w-65 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
   <div className="carousel-item h-full">
-    <img src="https://i.ibb.co.com/F4JxDVG2/download-1.jpg" />
+    <img src="https://i.ibb.co.com/3mRGs4hm/mainbanner-toyfest.jpg" />
   </div>
   <div className="carousel-item h-full">
-    <img src="https://i.ibb.co.com/Wvj48kh7/images.jpg" />
+    <img src="https://i.ibb.co.com/9HnPzc7p/lulu-1.jpg" />
   </div>
   <div className="carousel-item h-full">
-    <img src="https://i.ibb.co.com/Wvj48kh7/images.jpg" />
+    <img src="https://i.ibb.co.com/KctKzTh7/1663273088-1.jpg" />
   </div>
  </div>
 
@@ -60,13 +60,13 @@ const Home = () => {
 
 <div className="mt-4 ml-12 md:mt-0 md:ml-0 carousel carousel-vertical rounded-box h-86 w-70 shadow-2xl shadow-blue-500 border border-blue-200 hover:scale-105 transition-transform duration-300">
   <div className="carousel-item h-full">
-    <img src="https://i.ibb.co.com/fV8bGGDc/download-2.jpg" />
+    <img src="https://i.ibb.co.com/xQ4dYBN/1eb5da66-22e9-46a8-8820-72522e441f65.jpg" />
   </div>
   <div className="carousel-item h-full">
-    <img src="https://i.ibb.co.com/Wvk93S6D/download-3.jpg" />
+    <img src="https://i.ibb.co.com/Rkb16YL0/818bea33-0299-4f6f-becc-bf999a813ca6.jpg" />
   </div>
   <div className="carousel-item h-full">
-    <img src="https://i.ibb.co.com/F4JxDVG2/download-1.jpg" />
+    <img src="https://i.ibb.co.com/skLT8dG/0-Argos-Top-Toys-2018.webp" />
   </div>
  </div>
       </div>

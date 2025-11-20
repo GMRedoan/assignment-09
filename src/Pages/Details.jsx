@@ -8,8 +8,8 @@ const Details = () => {
 
      const toy = toys.find((toy) => toy.toyId === parseInt(id))
      return (
-        <div>
-            <p>{toy.toyName}</p>
+        <div className='bg-linear-to-b from-white to-blue-200 min-h-screen'>
+            <DetailsCard toy={toy}></DetailsCard>
         </div>
     );
 };

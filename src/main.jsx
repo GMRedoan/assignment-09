@@ -14,6 +14,7 @@ import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import PrivateRoutes from './routes/PrivateRoutes';
 import Details from './Pages/Details';
+import ForgetPass from './Pages/Forgetpass';
 
 
 const router = createBrowserRouter([
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>
       },
+      {
+        path:'/forgetPass',
+        element:<ForgetPass></ForgetPass>
+      }
     ]
   },
   {

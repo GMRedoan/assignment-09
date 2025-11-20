@@ -7,6 +7,7 @@ import { toast, ToastContainer } from 'react-toastify';
 const Login = () => {
     <title>Login</title>
     const { Login, user, googleLogin } = use(AuthContext)
+    const [email, setEmail] = useState('')
     const location = useLocation()
     const navigate = useNavigate()
     const notify = (msg) => toast.error(msg);
@@ -63,6 +64,7 @@ const Login = () => {
                             <fieldset className="fieldset">
                                 <label>Email</label>
                                 <input type="email" className="input"
+                                onChange={(e) => setEmail(e.target.value)}
                                     required
                                     name='email'
                                     placeholder="Email" />
@@ -73,7 +75,9 @@ const Login = () => {
                                     className="input"
                                     required
                                     placeholder="Password" />
-                                <div><a className="link link-hover">Forgot password?</a></div>
+                                <div><Link to='/forgetPass'
+                                state={email} 
+                                className="link link-hover">Forgot password?</Link></div>
                                 {
                                     error && <p className='text-red-500'>{error}</p>
                                 }

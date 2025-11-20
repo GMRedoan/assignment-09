@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaRegStar, FaStar } from 'react-icons/fa';
 import { Link } from 'react-router';
 
